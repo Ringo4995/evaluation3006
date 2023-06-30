@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url(/fonts/KumbhSans-VariableFont_wght.ttf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans';
+}
+
+/* ******************header ************************ */
+
+header .bg {
+    position: relative;
+    margin-left: 12.5%;
+    background-image: url(/images/skateboarder.jpg);
+    background-position: 50% 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62.5vh;
+    width: 75%;
+    z-index: -1;
+}
+
+header .bg p {
+    position: relative;
+    color: rgb(255, 125, 26);
+    padding-top: 31.5%;
+    padding-left: 60%;
+    font-size: 6em;
+    width: 100%;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    height: 12vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    z-index: 1;
+}
+
+.titre {
+    display: flex;
+    width: 130%;
+    margin: 1.8% 0 0 2%;
+    font-weight: bold;
+}
+
+.titre h1 {
+    font-size: 2.5em;
+}
+
+header .titre input[type='checkbox'],
+header .titre label {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5%;
+    margin-left: 55%;
+}
+
+header ul li {
+    margin-left: 4%;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-size: 1.25em;
+}
+
+header .compte {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+header .compte button {
+    margin-left: 80%;
+    margin-right: 2%;
+    font-size: 2em;
+    color: gray;
+    background-color: white;
+    border: none;
+}
+
+header .compte img {
+    width: 7%;
+}
+
+/* ******************** section ******************* */
+
+section {
+    margin: 0 12.5% 0 12.5%;
+}
+
+.winter {
+    margin: 1.5% 1.5%;
+    font-weight: bold;
+    color: gray;
+}
+
+.contenant {
+    display: flex;
+    flex-direction: row;
+    margin: 4% 3% 10% 3%;
+}
+
+.contenant img {
+    width: 30%;
+    border-radius: 15px;
+    height: 35vh;
+}
+
+.contenant .texte {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5% 2% 0 2%;
+    height: 35vh;
+}
+
+.contenant .texte h1 {
+    margin-bottom: 1%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contenant .texte h4 {
+    margin-bottom: 0.5%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contenant .texte .low-profile {
+    color: gray;
+    margin-bottom: 3%;
+}
+
+.contenant .texte h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.contenant .texte h2 span {
+    position: absolute;
+    font-weight: normal;
+    font-size: 0.5em;
+    color: rgb(255, 125, 26);
+    background-color: rgb(255, 228, 207);
+    border-radius: 5px;
+    padding: 0.4%;
+    margin-left: 1%;
+}
+
+.contenant .texte h3 {
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+    margin-bottom: 2%;
+}
+
+.contenant .texte .nombre {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 2% 0 1.5% 0;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.contenant .texte .nombre .plus {
+    color: rgb(255, 125, 26);
+    margin-left: 35%;
+    border: none;
+}
+
+.contenant .texte .nombre .moins {
+    color: rgb(255, 125, 26);
+    margin-right: 35%;
+    border: none;
+}
+
+.contenant .texte .shopping {
+    color: white;
+    background-color: rgb(255, 125, 26);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1%;
+    padding: 2% 0 1.5% 0;
+    box-shadow: rgb(255, 145, 0) 0px 12px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenant .texte .shopping i {
+    margin-right: 0.5%;
+}
+
+.contenant2 {
+    flex-direction: row-reverse;
+}
+
+/* ***************footer******************* */
+
+footer {
+    background-color: rgb(255, 125, 26);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    height: 14vh;
+    padding-top: 1.5%;
+}
+
+footer .fin {
+    margin-bottom: 0.5%;
+}
+
+footer .fa-brands {
+    margin-right: 0.5%;
+}

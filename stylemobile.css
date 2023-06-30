@@ -1,0 +1,163 @@
+@media screen and (max-width:576px) {
+
+    header .bg {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: fixed;
+        height: 12vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        top: 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 0;
+        background-color: rgb(224, 224, 224);
+        width: 385%;
+        height: 100vh;
+        margin-top: 69%;
+        padding-top: 2.5%;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 3%;
+        margin-top: 17%;
+        margin-bottom: 2.5%;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+    }
+
+    header input:checked~ul {
+        left: -63%;
+        transition: left 1s;
+    }
+
+    header input:not(:checked)~ul {
+        left: -500%;
+        transition: left 1s;
+    }
+
+    header .titre input[type='checkbox'] {
+        display: none;
+    }
+
+    header .titre label {
+        display: block;
+        cursor: pointer;
+        margin: 15% 5% 0 20%;
+        font-size: 2em;
+    }
+
+    .titre {
+        width: 26%;
+        margin: 1.8% 0 0 2%;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .titre h1 {
+        margin: 9% 0 0 5%;
+    }
+
+    header .compte {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-right: 3%;
+    }
+
+    header .compte button {
+        margin-left: 70%;
+        margin-right: 2%;
+        font-size: 2em;
+    }
+
+    header .compte img {
+        width: 12%;
+    }
+
+    /* **********section************* */
+
+    section {
+        margin: 24% 0 0 0;
+    }
+
+    .winter {
+        margin-left: 5%;
+    }
+
+    .contenant {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 25%;
+    }
+
+    .contenant img {
+        width: 100%;
+        height: max-content;
+        border-radius: 0;
+    }
+
+    .contenant .texte {
+        margin: 2% 5% 0 5%;
+    }
+
+    .contenant .texte h1 {
+        margin-bottom: 2%;
+    }
+
+    .contenant .texte .low-profile {
+        margin-bottom: 5%;
+    }
+
+    .contenant .texte h2 span {
+        position: absolute;
+        font-weight: normal;
+        font-size: 0.75em;
+        padding: 1%;
+        margin-left: 5%;
+    }
+
+    .contenant .texte .cousin {
+        position: relative;
+    }
+
+    .contenant .texte h3 {
+        position: absolute;
+        font-size: 1.4em;
+        right: 0;
+        bottom: -1%;
+    }
+
+    .contenant .texte .nombre {
+        font-size: 1.8em;
+        padding: 4% 0 4% 0;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .contenant .texte .shopping {
+        margin-top: 1%;
+        padding: 5.25% 0 5.25% 0;
+    }
+
+    /* footer */
+
+    footer {
+        height: 16.5vh;
+        padding-top: 7%;
+    }
+
+}
